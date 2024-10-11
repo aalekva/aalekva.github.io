@@ -1,0 +1,93 @@
+
+body{
+    background-color: rgb(34, 34, 34);
+}
+header {
+    background-image: url(../images/head.png);
+    background-size: cover; 
+    width: 100%;
+    height: 402px;
+    position: relative;
+    overflow: hidden; 
+}
+
+header::before {
+    content: ""; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.45); 
+    z-index: 0; 
+}
+
+.header-text {
+    color: rgb(255, 255, 255);
+    font-size: 60px;
+    font-family: "JetBrains Mono";
+    text-align: center;
+    position: relative; 
+    top: 40%;
+    margin: 0;
+    z-index: 1; 
+}
+
+.navigation {
+    font-family: "JetBrains Mono";
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+    position: relative; 
+    display: flex;
+    justify-content: center;
+    gap:90px;
+    align-items: center;
+    top: 50%;
+}
+
+.nav-item{
+    width: 5em;
+    text-align: center;
+    line-height: 110%;
+}
+.first-text{
+padding-top: 1em;
+}
+
+.sova{
+    width: 239px;
+    height: 287px;
+    margin-top: 34px;
+}
+.bosch-img1{
+    width: 409px;
+    height: 566px;
+    margin-top: 178px;
+    margin-right: 201px;
+}
+
+.second-section{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.second-section-card{
+    display: flex;
+    align-content:center;
+}
+
+.block-name{
+    font-family:"JetBrains Mono";
+    font-style: italic;
+    color: white;
+    font-size: 36px;
+}
+.question{
+    font-family: "JetBrains Mono";
+    font-size: 33px;
+    color: white;
+    display: flex;
+    margin-top: 20px;
+    margin-left: ;
+}
