@@ -1,93 +1,611 @@
-
-body{
-    background-color: rgb(34, 34, 34);
-}
-header {
-    background-image: url(../images/head.png);
-    background-size: cover; 
-    width: 100%;
-    height: 402px;
-    position: relative;
-    overflow: hidden; 
-}
-
-header::before {
-    content: ""; 
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.45); 
-    z-index: 0; 
-}
-
-.header-text {
-    color: rgb(255, 255, 255);
-    font-size: 60px;
-    font-family: "JetBrains Mono";
-    text-align: center;
-    position: relative; 
-    top: 40%;
-    margin: 0;
-    z-index: 1; 
-}
-
-.navigation {
-    font-family: "JetBrains Mono";
-    font-size: 25px;
-    color: rgb(255, 255, 255);
-    position: relative; 
+body{ 
+    background-color: rgb(34, 34, 34); 
+    display: flex; 
+    flex-direction: column; 
+    max-width: 100%;
+    overflow-x: hidden;
+} 
+.scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    background-color: #333; 
+    color: white; 
+    border: none;
+    border-radius: 50%; 
+    width: 4vw; 
+    height: 4vw; 
+    font-size: 1.5vw; 
     display: flex;
-    justify-content: center;
-    gap:90px;
     align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.scroll-to-top:hover {
+    color: #555555; 
+}
+
+.scroll-to-top:focus {
+    outline: none;
+}
+
+header { 
+    background-image: url(../images/head.png); 
+    background-size: cover;  
+    width: 100%; 
+    height: 20vw; 
+    position: relative; 
+} 
+ 
+header::before { 
+    content: "";  
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    right: 0; 
+    bottom: 0; 
+    background: rgba(0, 0, 0, 0.45);  
+    z-index: 0;  
+} 
+ 
+.header-text { 
+    color: rgb(255, 255, 255); 
+    font-size: 3.8vw; 
+    font-family: "JetBrains Mono"; 
+    text-align: center; 
+    position: relative;  
+    top: 40%; 
+    margin: 0; 
+    z-index: 1;  
+} 
+.navigation { 
+    font-family: "JetBrains Mono"; 
+    font-size: 1.5vw; 
+    color: rgb(255, 255, 255); 
+    position: relative;  
+    display: flex; 
+    justify-content: center; 
+    gap:8%; 
+    align-items: center; 
+    top: 50%; 
+} 
+ 
+.nav-item{ 
+    width: 5vw; 
+    text-align: center; 
+    line-height: 110%; 
+    text-decoration: none;
+    color: aliceblue;
+} 
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.first-text{ 
+    padding-top: 1vw; 
+    color:aliceblue;
+    text-decoration: none;
+} 
+
+ /* Секция с вопросами про Босха */
+
+ .answer {
+    max-height: 0;
+    overflow: hidden;
+    padding:0vw 1vw;
+    background-color: #414141;
+    width: 35.15vw;
+    font-family:"JetBrains Mono";  
+    color: white; 
+    font-size: 1.2vw;
+    text-align:justify;
+    transition: max-height 0.3s ease, background-color 0.3s ease;
+  }
+.question {
+    display: block;
+    margin: 0vw 0;
+    cursor: pointer;
+  }
+.answer.active {
+    max-height: 20vw;
+    background-color: #414141;
+    width: 35.15vw;
+    font-family:"JetBrains Mono";  
+    color: white; 
+    font-size: 1.2vw;
+    padding: 1.5vw 1vw;
+    text-align:justify;
+  }
+
+  .image-slider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin: auto;
+    width: 32vw;
+    height: auto;
+  }
+  .slider-image {
+    max-width: 100%;
+    height: auto;
+    transition: opacity 0.1s ease;
+  }
+  .arrow {
+    background-color: transparent;
+    border: none;
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+    position: absolute;
     top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+  }
+  .left-arrow {
+    left: 10px;
+  }
+  .right-arrow {
+    right: 10px;
+  }
+.sova-container{ 
+    position: absolute; 
+    z-index: -1; 
+    left: 5%; 
+    top: 45%; 
+} 
+ 
+.sova { 
+    width: 15vw; 
+    height: 100%; 
+} 
+
+.mysterious-bosch {
+    display: flex;
 }
 
-.nav-item{
-    width: 5em;
-    text-align: center;
-    line-height: 110%;
-}
-.first-text{
-padding-top: 1em;
+.cont-questions {
+    width: 54vw;
+
 }
 
-.sova{
-    width: 239px;
-    height: 287px;
-    margin-top: 34px;
-}
-.bosch-img1{
-    width: 409px;
-    height: 566px;
-    margin-top: 178px;
-    margin-right: 201px;
+.cont-image-bosch
+{
+    width: 27vw;
+    height: 37vw;
 }
 
+.second-section-card{ 
+    display: flex; 
+    width: 70%;
+    align-items: center;
+    justify-content: center
+} 
+ 
+.block-name{ 
+    font-family:"JetBrains Mono"; 
+    font-style: italic; 
+    color: white; 
+    font-size: 2.35vw;
+} 
+.cont-question { 
+display: flex; 
+} 
+ 
+.questions { 
+    flex-direction: column; 
+} 
+.question{ 
+    font-family: "JetBrains Mono"; 
+    font-size: 2vw; 
+    color: white; 
+    display: flex; 
+    margin-top: 4vw; 
+    background-color:#414141;
+    width: 80%;
+    border-style:none;
+} 
+ 
+.question-button { 
+    cursor: pointer;  
+    font-size: 2vw;  
+    margin-left: 1vw;  
+    color: white; 
+} 
+ 
+.moon-container{ 
+    position: absolute; 
+    z-index: -1; 
+    top: 75%; 
+    right: 3%; 
+} 
+ 
+.moon{ 
+    width: 20vw; 
+    height: 100%; 
+} 
+.kolobok-container{ 
+    position: absolute; 
+    z-index: -1; 
+    top: 150%; 
+    left: 0;
+} 
+ 
+.kolobok{ 
+    width: 25vw; 
+    height: 100%; 
+}
+
+
+.close{
+    font-family: Revalia;
+    font-size: 48px;
+    color: blue;
+    float: right;
+}
+
+
+.first-section{
+    width: 70%;  
+    margin-top: 10%;
+
+/* Секция про особенности творчества */
+}
 .second-section{
+display: flex;
+flex-direction: column;
+align-items: center;
+margin-top: 15%;
+}
+.second-section-content{
+width: 70%;  
+
+}
+
+.img_block_osob{
+    display: flex; 
+    flex-direction: row; 
+    justify-content: space-between;
+    align-items: center; 
+    margin-top: 2vw;
+}
+.osob_img{
+    width: 21vw; 
+    height: 100%; 
+}
+.osob-text{
+    font-family:"JetBrains Mono";  
+    color: white; 
+    font-size: 1.5vw;
+    margin-top: 3%;
+    text-align:justify;
+
+}
+.second-background{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   width: 100%;
+   position: absolute;
+   padding-top: 10vw;
+}
+
+.s-borodoy-container{
+position: relative;
+}
+.open-mouth-container{
+    position: relative;
+    top: 20vw;
+}
+
+.s-borodoy{ 
+    width: auto; 
+    height: 25vw;
+}
+.open-mouth{
+    position: relative;
+    width: 40vw; 
+    height: auto;
+    z-index: -11; 
+}
+
+/*Секция что говорят о Босхе*/
+.quote-container {
+    margin-top: 8%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.quote-big {
+    transition: opacity 0.3s ease;
+    font-family:"JetBrains Mono"; 
+    font-weight: bold;
+    font-style: italic;
+    color: white; 
+    font-size: 2.3vw;
+    margin-top: 5%;
+    text-align:center;
+}
+
+button {
+    background: none;
+    border: none;
+    font-size: 3vw;
+    cursor: pointer;
+    color: white; 
+    transition: color 0.3s ease;
+}
+button:hover {
+    color: #727272; 
+} 
+
+button:focus {
+    outline: none;
+}
+
+
+
+
+.three-section{ 
+    margin-top: 10vw;
+    width: 70%;  
+    height: 20vw;
+} 
+
+
+.rusalki-section{
+    display: flex;
+    flex-direction: row;  
+    justify-content: space-between;  
+    width: 100%;
+}
+.img-rusalki{
+    width: 35vw; 
+    height: auto;
+    z-index: -11; 
+    left: 50%;
+
+
+}
+.img-rusalki2{
+    width: 18vw; 
+    height: auto;
+    z-index: -11; 
+    /* position: relative;
+    left: 15vw; */
+
+}
+/* Секция с картинами */
+
+.four-section, .five-section,.six-section{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.four-section-background{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    position: relative;
+    z-index: -10;
+}
+.four-section-title{
+    display: flex;
+    align-items: center;
+    width: 70%;
+    margin-bottom: 3%;
+}
+
+.four-section-content-container, .five-section-content-container, .six-section-content-container{
     display: flex;
     justify-content: center;
-    margin-top: 100px;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3%;
+}
+.four-section-content, .five-section-content, .six-section-content{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 70%;
+    gap: 5%;
 }
 
-.second-section-card{
-    display: flex;
-    align-content:center;
+.sad_zemnich-img{
+    width: auto; 
+    height: 47vw;
+    z-index: -11; 
+}
+.sad_zemnich-text{
+    font-family:"JetBrains Mono";  
+    color: white; 
+    font-size: 1.5vw;
+    text-align: justify;
+
+}
+.iskush-antonia-img{
+    width: auto; 
+    height: 47vw;
+    z-index: -11;
 }
 
-.block-name{
-    font-family:"JetBrains Mono";
-    font-style: italic;
-    color: white;
-    font-size: 36px;
+.iskush-antonia-text{
+    font-family:"JetBrains Mono";  
+    color: white; 
+    font-size: 1.5vw;
+    text-align: justify;
+
 }
-.question{
-    font-family: "JetBrains Mono";
-    font-size: 33px;
-    color: white;
+.nesenie-kresta-img{
+    width: auto; 
+    height: 40vw;
+    z-index: -11;
+}
+.nesenie-kresta-text{
+    font-family:"JetBrains Mono";  
+    color: white; 
+    font-size: 1.5vw;
+    text-align: justify;
+}
+
+.naked-man-cont{
+    top: 10vw;
+    right: 2%;
+}
+.naked-man-img{
+    width: 22vw; 
+    height: auto;
+    top:7vw;
+    position: absolute;
+    right: 2%;
+
+}
+.dragon-img{
+    width: 17vw; 
+    height: auto;
+    position: absolute;
+    top: 25vw;
+}
+
+/* Секция с музеями */
+.fifth-section{
+    width: 70%;
     display: flex;
-    margin-top: 20px;
-    margin-left: ;
+    flex-direction: column;
+    margin-top: 5%;
+}
+.fifth-section-content{
+    display: flex;
+    flex-direction: row;
+    margin-top: 5%;
+    gap: 5%;
+}
+
+.museum-title-cont{
+    margin-top: 3%;
+}
+.museum-title{
+    font-family:"JetBrains Mono";  
+    color: white; 
+    font-size: 2vw;
+}
+.museum-img-cont{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center; 
+    margin-top: 2%;
+}
+.museum-img{
+    width: auto; 
+    height: 24vw;
+}
+.museum-text-cont{
+    margin-top: 2%;
+}
+.museum-text{
+    font-family:"JetBrains Mono";  
+    color: white; 
+    font-size: 1.5vw;
+    text-align: justify;
+}
+
+.museum-button1{
+    cursor: pointer;
+    font-family: "JetBrains Mono"; 
+    font-size: 1.7vw; 
+    font-weight: bold;
+    color: white; 
+    display: flex; 
+    margin-top: 4vw; 
+    background-color:rgba(105, 93, 72, 1);
+    border-width: 1;
+    width: 43%;
+    height: 4.7vw;
+    border-style:none;
+    border-radius: 1.5vw;
+    display: inline-block;
+    padding: 0.4vw 2vw;
+
+}
+.museum-button1:hover{
+    background-color:rgb(72, 64, 49) ;
+}
+.museum-button2{
+    cursor: pointer;
+    font-family: "JetBrains Mono"; 
+    font-size: 1.7vw; 
+    font-weight: bold;
+    color: white; 
+    display: flex; 
+    margin-top: 4vw; 
+    background-color:rgba(105, 93, 72, 1);
+    border-width: 1;
+    width: 43%;
+    height: 5.3vw;
+    border-style:none;
+    border-radius: 1.5vw;
+    display: inline-block;
+    padding: 0.6vw 2vw;
+
+}
+
+.museum-button2:hover{
+    background-color:rgb(72, 64, 49) ;
+}
+.museum-button-cont{
+    display: flex;
+    justify-content: center; 
+}
+.button-link{
+    color: white; /* Цвет текста */
+    text-decoration: none; /* Убираем подчеркивание */
+    display: inline-block;
+}
+
+/* Футер */
+.footer{
+    margin-top: 8%;
+    height: 10vw;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-upper-item{ 
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-between; 
+    align-items:center; 
+    margin-top: 3%; 
+}
+.upper-item{
+    font-family: "JetBrains Mono"; 
+    font-size: 1vw; 
+    color: rgb(255, 255, 255);
+    width: 25vw; 
+    text-decoration: none;
+    text-align: center;
+}
+
+.footer-lower-item{
+    display: flex; 
+    flex-direction: row;
+    gap: 8%;
+    align-items:center; 
+    margin-top: 3%; 
+}
+
+.lower-item{
+    font-family: "JetBrains Mono"; 
+    font-size: 1vw; 
+    color: rgb(152, 152, 152);
+    width: 25vw; 
+    text-decoration:underline;
+    text-align: center;
 }

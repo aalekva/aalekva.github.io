@@ -1,54 +1,299 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="reseter.css">
-    <link rel="stylesheet" href="bosch.css">
-    <title>Иероним Босх</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
-</head>
-<body>
-    <header> 
-        <h1 class="header-text">
-            ТВОРЧЕСТВО ИЕРОНИМА БОСХА
-        </h1>
-        <div class="navigation">
-            <div class="nav-item first-text">Загадочный Босх</div>
-            <div class="nav-item">Особенности</div>
-            <div class="nav-item">О Босхе</div>
-            <div class="nav-item">Картины</div>
-            <div class="nav-item">Музеи</div>
-        </div>
-    </header>
-<div class="second-section"> 
-    <img src="../images/sova.png" alt="" class="sova" >
-        <div class="second-section-card">
-            <div class="cont-questions">
-                <div class="questions">
-                    <h2 class="block-name">
-                        ЗАГАДОЧНЫЙ БОСХ
-                    </h2>
-                    <div class="question">
-                        <p>Кто такой Иероним Босх?</p>
-                        <img src="" alt="">
-                        <div class="question-button">
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="stylesheet" href="reseter.css"> 
+    <link rel="stylesheet" href="bosch.css"> 
+    <title>Иероним Босх</title> 
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet"> 
+</head> 
+<body> 
+    <button class="scroll-to-top" id="scrollToTop">&#x2191;</button>
+    <header>  
+        <h1 class="header-text"> 
+            ТВОРЧЕСТВО ИЕРОНИМА БОСХА 
+        </h1> 
+        <nav class="navigation"> 
+            <a href="#zagadka" class="nav-item">Загадочный Босх</a> 
+            <a href='#osob'class="nav-item">Особенности</a> 
+            <a href='#about'class="nav-item">О Босхе</a> 
+            <a href='#kartini'class="nav-item">Картины</a> 
+            <a href = 'museums' class="nav-item">Музеи</a> 
+        </nav> 
+    </header> 
+    <main> 
+<!-- Секция загадочный Босх -->   
+<section id="zagadka" class="second-section-card">
 
-                        </div>
-                    </div>
-                    
-                    <div class="question">
-                        Где вырос Иероним Босх?
-                    </div>
-                </div>
-            </div>
-            <div class="cont-image-bosch">
-                <img src="../images/bosch.png" class="bosch-img1">
-            </div>
+    <div class="sova-container"> 
+    <img src="../images/sova.png" alt="Фрагмент картины" class="sova" > 
     </div>
+     
+    <div class="moon-container"> 
+        <img src="../images/moon.png" alt="Фрагмент картины" class="moon"> 
+    </div>
+
+    <div class="kolobok-container"> 
+        <img src="../images/kolobok.png" alt="Фрагмент картины" class="kolobok" >
+    </div> 
+
+</section>
+<!-- Секция с вопросами-->
+<section class="first-section">
+    <div class="mysterious-bosch container">
+        <div class="cont-questions"> 
+            <h2 class="block-name"> 
+                ЗАГАДОЧНЫЙ БОСХ 
+            </h2> 
+            <div class="questions"> 
+                <button class="question" data-answer="answer1">Кто такой Иероним Босх?</button> 
+                <div class="answer" id="answer1">Иероним Босх(1450—1516, Хертогенбос) - ярчайший представитель Северного Возрождения, художник, чья личность не перестаёт оставаться загадкой и через 500 лет после его смерти, а творчество - источником вдохновения для современных художников, дизайнеров, кинематографистов. </div>
+            
+                <button class="question" data-answer="answer2">Где вырос Иероним Босх?</button> 
+                <div class="answer" id="answer2">Предположительно он родился в 1453 году (большинство биографов осторожно говорит о 1450-х) в Хертогенбосе – одном из центров графства Брабант на юге Голландии.</div>
+            
+                <button class="question" data-answer="answer3">Кто его предки?</button> 
+                <div class="answer" id="answer3">Его семья была из художественной династии.</div>
+            
+                <button class="question" data-answer="answer4">Был ли он женат?</button> 
+                <div class="answer" id="answer4">Иероним Босх женился на Алейт ван ден Меервеен, происходившей из влиятельного и богатого рода. Это была выгодная партия – Иероним стал зажиточным землевладельцем и даже поучаствовал в судебной тяжбе с шурином, который счел себя обделенным. Суд вынес решение в пользу художника.</div>
+            
+                <button class="question" data-answer="answer5">Когда умер Босх?</button> 
+                <div class="answer" id="answer5">Он умер в 1516 году и был торжественно отпет как «выдающийся мастер» в соборе св. Иоанна.</div>
+            </div>
+            
+        </div>
+    <div class="image-slider"> 
+        <button class="arrow left-arrow">&#9664;</button> 
+        <img src="../images/bosch.png" alt = 'Портрет Босха' class="slider-image" id="current-image"> 
+
+        <button class="arrow right-arrow">&#9654;</button> 
+    </div>
+    </div> 
+</section>
+
+<!-- Секция особенности творчества -->
+<section class="second-section">  
+    <div class="second-section-content">
+        <h3  id = 'osob' class = 'block-name'>
+             ОСОБЕННОСТИ ТВОРЧЕСТВА
+        </h3>
+        <div class="img_block_osob">
+            <img src = '../images/in_a_bubble.png' alt="Фрагмент картины" class="osob_img">
+            <img src = '../images/Rectangle 15.png' alt="Фрагмент картины" class="osob_img">
+            <img src = '../images/Rectangle 16.png' alt="Фрагмент картины" class="osob_img">
+        </div>
+        <p class="osob-text">
+                    Густонаселенность картин; смелая, безудержная 
+                    фантазия в изображении монстров и ада реализована
+                    в канонических религиозных сюжетах; ловкое сочетание 
+                    яркого визуального ряда с нравоучительным содержанием
+                    - это всё о творчестве Иеронима Босха. Сюрреалисты 
+                    называют Босха «почетным профессором ночных 
+                    кошмаров». Трудно не заметить, что при всей своей 
+                    иконографичности, стиль картин Иеронима Босха 
+                    выходит далеко за рамки каких-либо канонов. В 
+                    современной поп-индустрии существует такое явление 
+                    как «христианский рок» - многие «богоугодные» 
+                    коллективы звучат громче, чем ад, и мрачнее, 
+                    чем апокалипсис. В определенном смысле их можно
+                    считать последователями Босха. Босх тоже 
+                    прославлял Бога, но сделался знаменит за счет 
+                    присутствовавшего на его полотнах Дьявола.
+        </p>
+    </div>
+
+        <div class="second-background">
+            <div class="s-borodoy-container">
+            <img src="../images/s_borodoy.png" alt="Фрагмент картины" class="s-borodoy">
+            </div>
+
+            <div class="open-mouth-container">
+            <img src="../images/open_mouth.png" alt="Фрагмент картины" class="open-mouth">
+            </div>
+        </div>
+
+
+</section> 
+
+<!-- Секция с цитатами -->
+<section class="three-section">
+        <h3 id="about" class = 'block-name'>
+            ЧТО ГОВОРЯТ О БОСХЕ?
+        </h3>
+        <div class="quote-container">
+            <button class="prev-quote">&#9664;</button>
+            <h4 class="quote-big" id="current-quote">
+                'Босх состоит из одних загадок.' <br/>— Федерико Дзери, итальянский искусствовед
+            </h4>
+            <button class="next-quote">&#9654;</button>
+        </div>
+              
+</section>
+
+<div class="rusalki-section">   
+    <img src="../images/rusalki1.png" alt="русалки" class="img-rusalki">
+    <img src ='../images/rusalki2.png' alt = 'русалки' class="img-rusalki2">
 </div>
 
-</body>
+<!-- Секция с картинами -->
+<section class="four-section"> 
+    <div class="four-section-background"> 
+        <img src="../images/dragon.png" alt ='Фрагмент картины' class="dragon-img">
+    <img src="../images/naked_man.png" alt ='Фрагмент картины' class="naked-man-img">
+</div> 
+        <div class="four-section-content-container">
+            <div class="four-section-title">
+                <h5 id = 'kartini' class = 'block-name'>
+                КАРТИНЫ
+                </h5>  
+            </div>
+        <div class="four-section-content">
+            <img src = '../images/sad_zemnich.png'alt="Сад земных наслаждени" class="sad_zemnich-img">
+            <p class="sad_zemnich-text">
+                «Сад земных наслаждений» – самое известное произведение 
+                великого Иеронима Босха. <br/><br/><br/>
+                Первое упоминание о триптихе относится 
+                к 1517-му году: «Сад…» фигурирует в описи имущества семейства 
+                Нассау в Брюсселе. <br/><br/><br/>
+                «Сад земных наслаждений» сохранился лучше других триптихов Босха. 
+                Его отличает равномерное распределение света по всей поверхности, 
+                отсутствие свето-теневой моделировки, чёткая прорисовка фигур, 
+                яркий и насыщенный колорит.<br/><br/><br/>
+                Сейчас триптих находится в музее Прадо в Испании в городе Мадрид. Его копия есть в Эрмитаже в 
+                Санкт-Петербурге.
+            </p>
+        </div>
+    </div>
+
+   
+</section>
+
+ <section class="five-section"> 
+    <div class="five-section-content-container">
+
+        <div class="five-section-content">
+            <p class="iskush-antonia-text">
+                Триптих “Искушение Святого Антония” это одна из 
+                важнейших работ, в которой находит отражение 
+                мировоззрение Босха. <br/><br/><br/>
+
+                С присущей ему страстью художник создает впечатляющую 
+                картину борьбы человека со злом, искушениями, грехом и 
+                самим дьяволом. Святой Антоний, с точки зрения многих 
+                специалистов по Босху, оказывается не только 
+                персонификацией борьбы любого христианина с 
+                многочисленными испытаниями, выпадающими на его долю, 
+                но и проекцией собственного «я» художника.<br/><br/><br/>  
+                
+                Триптих «Искушение Святого Антония» хранится в крупнейшей 
+                галерее Португалии – 
+                Национальном музее старинного искусства в Лиссабоне. 
+            </p>
+            <img src = '../images/image 48.png' alt="Искушение Святого Антония" class="iskush-antonia-img">
+        </div>
+    </div>
+</section>
+
+<section class="six-section"> 
+    <div class="six-section-content-container">
+
+        <div class="six-section-content">
+            <img src = '../images/image 49.png' alt="Несение креста" class="nesenie-kresta-img">
+            <p class="nesenie-kresta-text">
+                Наряду с ”Садом земных наслаждений”, гентское 
+                “Несение креста” долго считалось самой узнаваемой 
+                картиной Иеронима Босха, воспринималось как босховский
+                  программная картина и «символ веры».<br/><br/><br/>
+
+                Уж слишком впечатляющей была эта адская мозаика, 
+                сложенная из крепко пригнанных друг к другу 
+                дегенеративных лиц, – настолько отвратительных, что 
+                даже и завораживающих. Произведение расценивалось как 
+                безусловно великое и новаторское. 
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- Секция с музеями -->
+<section class="fifth-section">
+    <h6 id = 'museums' class = 'block-name'>
+        МУЗЕИ
+    </h6> 
+    <div class ='museum-title-cont'>
+        <p class="museum-title">
+            Музей Прадо. Мадрид, Испания
+        </p>
+    </div>
+    <div class="museum-img-cont">
+        <img src = "../images/museum prada1.png" alt="Музей Прадо" class="museum-img">
+        <img src = "../images/museum prada2.png" alt="Музей Прадо" class="museum-img">
+    </div>
+    <div class="museum-text-cont">
+        <p class="museum-text">
+            Самая полная коллекция «кошмаров» нидерландского художника хранится в Музее 
+            Прадо. Она сохранилась благодаря мрачному покровителю творчества Босха – королю 
+            Испании Филиппу II.
+        </p>
+    </div>
+    <div class="museum-button-cont">
+        <button class="museum-button1">
+            <a href = 'https://www.museodelprado.es/en' class="button-link">ПЕРЕЙТИ НА САЙТ МУЗЕЯ</a>
+        </button>
+    </div>
+
+    <div class ='museum-title-cont'>
+        <p class="museum-title">
+            Арт-центр Иеронима Босха. Хертогенбос, Нидерланды
+        </p>
+    </div>
+    <div class="museum-img-cont">
+        <img src = "../images/art-center.png" alt="Арт-центр" class="museum-img" >
+        <img src = "../images/art-center2.png" alt="Арт-центр" class="museum-img">
+    </div>
+    <div class="museum-text-cont">
+        <p class="museum-text">
+            Арт-центр Иеронима Босха — центр, посвященный творчеству нидерландского 
+            художника Иеронима Босха, находится в его родном городе Хертогенбос. Был открыт 
+            в феврале 2007 года. На четырёх этажах центра располагаются качественные 
+            фотографические репродукции всех работ Иеронима Босха в натуральную величину в 
+            рамках ручной работы. Верхний этаж башни (на высоте 40 метров) представляет 
+            замечатель-ный вид на родной  город Иеронима Босха. В цокольном этаже 
+            романского здания воссоздана мастерская художника.
+        </p>
+    </div>
+    <div class="museum-button-cont">
+        <button class="museum-button2">
+            <a href = 'https://jheronimusbosch-artcenter.nl/' class="button-link">ПЕРЕЙТИ НА САЙТ АРТ-ЦЕНТРА</a>
+
+        </button>
+    </div>
+</section>
+</main>
+ <!-- Футер -->
+
+<footer class="footer">
+    <div class="footer-upper-item">
+        <a href="#zagadka" class="upper-item">Загадочный Босх</a> 
+        <a href='#osob'class="upper-item">Особенности</a> 
+        <a href='#about'class="upper-item">О Босхе</a> 
+        <a href='#kartini'class="upper-item">Картины</a> 
+        <a href = 'museums' class="upper-item">Музеи</a> 
+        <a href = 'https://www.museodelprado.es/en' class="upper-item">Сайт музея Прадо</a> 
+        <a href = 'https://jheronimusbosch-artcenter.nl/' class="upper-item">Сайт Арт-центр</a> 
+    </div>
+    <div class="footer-lower-item">
+        <a href="mailto:aleksandrarodichevaa@gmail.com" class="lower-item">По вопросам обращайтесь на почту: aleksandrarodichevaa@gmail.com</a>
+        <a href="tel:+79817035682" class="lower-item">Или по телефону: +7-981-703-56-82</a>
+    </div>
+</footer>
+
+
+ <script src ="myScript.js"></script>   
+
+</body> 
 </html>
