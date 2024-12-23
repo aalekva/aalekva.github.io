@@ -28,7 +28,7 @@ header::before {
     font-family: "JetBrains Mono";
     text-align: center;
     position: relative; 
-    top: 50%;
+    top: 40%;
     margin: 0;
     z-index: 1; 
 }
@@ -38,11 +38,20 @@ header::before {
     font-size: 25px;
     color: rgb(255, 255, 255);
     position: relative; 
-    display: inline-block;
     display: flex;
     justify-content: center;
     gap:90px;
     align-items: center;
+    top: 50%;
+}
+
+.nav-item{
+    width: 5em;
+    text-align: center;
+    line-height: 110%;
+}
+.first-text{
+padding-top: 1em;
 }
 
 .sova{
@@ -57,11 +66,17 @@ header::before {
     margin-right: 201px;
 }
 
-.cont-1{
-    
-    display: grid;
-    grid-template-columns: 194px 608px 435px 203px; 
+.second-section{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
 }
+
+.second-section-card{
+    display: flex;
+    align-content:center;
+}
+
 .block-name{
     font-family:"JetBrains Mono";
     font-style: italic;
@@ -72,4 +87,7 @@ header::before {
     font-family: "JetBrains Mono";
     font-size: 33px;
     color: white;
+    display: flex;
+    margin-top: 20px;
+    margin-left: ;
 }
